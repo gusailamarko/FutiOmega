@@ -46,21 +46,15 @@ html, body
 /*HOME CONTENT*/
 .Content-Container
 {
-  width: 75dvw; /*Only on large screens*/
+  width: 75dvw;
   /*height: 100dvh;*/
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(105, 155, 107, 0.4);
-}
-
-@media (max-width: 767px)
-{
-  .Content-Container
-  {
-    width: 100dvw;
-  }
+  /*background-color: rgba(105, 155, 107, 0.4);*/
+  background-image: url('/imgs/background.png');
+  background-position: center;
 }
 
 .Sale
@@ -71,9 +65,22 @@ html, body
 
 .Schedule, .Sale
 {
-  background-color: rgba(243, 203, 95, 0.7);
-  border: 2px solid black;
+  background-color: rgb(243, 203, 95);
+  border: 1px solid black;
   border-radius: 10px;
-  box-shadow: 3px 3px rgb(83, 79, 79);
+  box-shadow: 3px 3px rgb(110, 105, 105);
   padding: 2rem;
+}
+
+@media (max-width: 767px)
+{
+  .Content-Container
+  {
+    width: 100dvw;
+  }
+
+  .Sale
+  {
+    background-size: 250px 250px;
+  }
 }
